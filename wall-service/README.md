@@ -19,3 +19,6 @@ mysql:
 ## 启动项目
 
 打开```WallApplication.java```类，右键Run运行此项目。
+
+
+docker run -dit -p 9999:9999 --privileged=true --restart=always -v /home/wall:/app --name wall wall:v1

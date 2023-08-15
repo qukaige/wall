@@ -39,7 +39,7 @@
         </div>
         　　
         <div id="footer">
-            <p><a href="https://github.com/super-tongyao/wall/issues" target="_blank">提交Bug问题及建议</a> </p>
+            <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=18042250" target="_blank" class="text-color">京ICP备18042250号</a> </p>
         </div>
 
     </div>

@@ -8,7 +8,8 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:9999',
+        target: 'http://kg200.top/api/',
+        // target: 'http://localhost:9999',
         ws: true,
         changeOrigin: true,
         pathRewrite: {

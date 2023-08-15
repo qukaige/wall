@@ -2,6 +2,7 @@ package cn.ityao.wall.config;
 
 import cn.ityao.wall.exception.Unauthorizedxception;
 import cn.ityao.wall.service.ITOptionService;
+import cn.ityao.wall.util.IpUtils;
 import cn.ityao.wall.util.TokenUtil;
 import com.auth0.jwt.interfaces.Claim;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,7 +40,9 @@ public class JwtInterceptor implements HandlerInterceptor{
         Map<String, Claim> userData = null;
         try {
             userData = TokenUtil.parsingToken(token,secret);
+            System.out.println(userData);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new Unauthorizedxception(401,"Token令牌不正确，请先登录。");
         }
         String userId = userData.get("userId").asString();

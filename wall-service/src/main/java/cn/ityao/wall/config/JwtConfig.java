@@ -26,8 +26,10 @@ public class JwtConfig implements WebMvcConfigurer{
                 "/favicon.ico",
                 "/login",
                 "/t-tag/query",
+                "/t-tag/init",
                 "/t-resource/query",
                 "/t-option/target",
+                "/api/static/**",
                 "/static/**");
         registration.addPathPatterns("/**");
     }

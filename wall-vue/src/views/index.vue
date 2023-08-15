@@ -4,11 +4,11 @@
             <div class="header-title">
                 <span @click="tests">{{option.homeTitle}}</span>
             </div>
-            <div class="github-link">
+            <!-- <div class="github-link">
                 <a-tooltip title="前往 Github" color="#1890ff" placement="bottom">
-                    <a href="https://github.com/super-tongyao/wall" target="_blank"><github-outlined /> GitHub</a>
+                    <a href="https://github.com/qukaige/wall" target="_blank"><github-outlined /> GitHub</a>
                 </a-tooltip>
-            </div>
+            </div> -->
             <a-menu theme="light" mode="horizontal" style="line-height: 50px;border: 0px" v-model:selectedKeys="selectedTag">
                 <a-menu-item key="" @click="load('')">
                     全部

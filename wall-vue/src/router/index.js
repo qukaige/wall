@@ -6,7 +6,7 @@ const routes = [
         path: '/',
         name: 'index',
         meta:{
-            title: '首页'
+            title: '个人学习网'
         },
         component: () => import('@/views/index')
     },
